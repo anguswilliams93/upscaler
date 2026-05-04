@@ -1,0 +1,98 @@
+# --- Python ----------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg
+*.egg-info/
+*.egg-link
+.eggs/
+pip-wheel-metadata/
+share/python-wheels/
+wheels/
+MANIFEST
+
+# Virtualenvs
+.venv/
+venv/
+env/
+ENV/
+
+# Test / type-check caches
+.mypy_cache/
+.pyright/
+.pytype/
+.ruff_cache/
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.cache/
+.hypothesis/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# --- Secrets & local config -----------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.json
+
+# --- IDE / editor ---------------------------------------------------
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+
+# --- OS -------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# --- Project: model weights -----------------------------------------
+# Weights are large + license-bound; download via OpenModelDB or HF.
+models/*.pth
+models/*.safetensors
+models/*.ckpt
+models/*.bin
+models/*.onnx
+models/_user_models.json
+models/SeedVR2/
+models/FlashVSR/
+!models/.gitkeep
+
+# --- Project: vendored backends -------------------------------------
+# Each vendor lives at vendor/<name>/ with its own license.
+vendor/
+
+# --- Project: runtime data ------------------------------------------
+uploads/
+outputs/
+logs/
+*.log
+
+# --- Build: HuggingFace cache (if used inside repo) -----------------
+.cache/huggingface/
+hf_cache/
+
+# --- Editor / agent metadata ----------------------------------------
+.claude/
+.aider*
+.windsurfrules
+.design/
+.omc/
+

@@ -1,0 +1,29 @@
+fastapi>=0.115
+uvicorn[standard]>=0.32
+python-dotenv>=1.0
+python-multipart>=0.0.12
+pydantic>=2.9
+Pillow>=10.4
+numpy>=1.26
+opencv-python-headless>=4.10
+spandrel>=0.4
+imageio-ffmpeg>=0.5
+huggingface_hub>=0.26
+
+# SeedVR2 vendor (vendor/seedvr2/inference_cli.py)
+psutil>=5.9
+einops>=0.7
+omegaconf>=2.3.0
+diffusers>=0.33.1
+peft>=0.17.0
+rotary_embedding_torch>=0.5.3
+gguf>=0.10
+matplotlib>=3.8
+tqdm>=4.66
+safetensors>=0.4
+accelerate>=0.30
+transformers>=4.40,<4.50  # 5.x KeyErrors on missing flash_attn (regression)
+
+pytest>=8.3
+httpx>=0.27
+mypy>=1.13
