@@ -96,3 +96,6 @@ hf_cache/
 .design/
 .omc/
 
+CLAUDE.md
+.omc/state/agent-replay-2ba7b237-0b0a-43af-ac99-900bbfdea0e2.jsonl
+.omc/state/subagent-tracking.json
